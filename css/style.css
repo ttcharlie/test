@@ -4,7 +4,17 @@
     font-family: 'Manrope', sans-serif;
 }
 
-@keyframes moveGradient {
+
+body{
+    background: linear-gradient(-45deg, #ff901a, #73b9c4, #aab4be, #ff901a);
+	background-size: 400% 400%;
+	animation: moveGradient 15s ease infinite;
+	height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+
+  @keyframes moveGradient {
     0% {
       background-position: 0% 50%;
     }
@@ -12,14 +22,6 @@
       background-position: 100% 50%;
     }
   }
-
-body{
-	background-size: 400% 400%;
-	height: 100vh;
-    	display: grid;
-   	 place-items: center;
-  }
-
 
 .container{
     display: grid;
